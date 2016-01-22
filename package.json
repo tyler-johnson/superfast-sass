@@ -1,0 +1,35 @@
+{
+	"name": "superfast-sass",
+	"version": "0.1.0",
+	"description": "Sass/scss integration for Superfast.",
+	"author": "Tyler Johnson <tyler@tylerjohnson.me>",
+	"repository": {
+		"type": "git",
+		"url" : "https://github.com/tyler-johnson/superfast-sass.git"
+	},
+	"main": "index.js",
+	"jsnext:main": "src/index.js",
+	"superfast": true,
+	"scripts": {
+		"lint": "jshint src/ test/",
+		"build": "make",
+		"prepublish": "npm run lint && npm run build"
+	},
+	"dependencies": {
+		"lodash": "4.x",
+		"node-sass": "~3.4.2"
+	},
+	"devDependencies": {
+		"babel-preset-es2015-rollup": "~1.1.1",
+		"jshint": "2.x",
+		"rollup": "~0.25.1",
+		"rollup-plugin-babel": "~2.3.9"
+	},
+	"license": "MIT",
+	"keywords": [
+		"superfast",
+		"plugin",
+		"sass",
+		"scss"
+	]
+}
