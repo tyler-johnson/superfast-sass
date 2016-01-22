@@ -11,7 +11,7 @@
 	"jsnext:main": "src/index.js",
 	"superfast": true,
 	"scripts": {
-		"lint": "jshint src/ test/",
+		"lint": "jshint src/",
 		"build": "make",
 		"prepublish": "npm run lint && npm run build"
 	},
